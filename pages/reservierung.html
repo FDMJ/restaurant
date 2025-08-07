@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tisch reservieren | Anna's Kulinarik</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">Anna's Kulinarik</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Catering</a></li>
+                <li><a href="chefin.html">Unsere Chefin</a></li>
+                <li><a href="speisekarte.html">Speisekarte</a></li>
+                <li><a href="reservierung.html" class="active">Reservieren</a></li>
+                <li><a href="blog.html">Für unsere Fans</a></li>
+            </ul>
+             <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container form-section">
+            <h1 class="page-title">Reservieren Sie Ihren Tisch</h1>
+            <p class="subtitle">Wir freuen uns darauf, Sie bei uns begrüßen zu dürfen. Füllen Sie einfach das Formular aus und wir bestätigen Ihre Reservierung per E-Mail.</p>
+            
+            <form>
+                <input type="text" name="name" placeholder="Ihr Name" required>
+                <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+                <input type="tel" name="phone" placeholder="Ihre Telefonnummer">
+                <div class="form-row">
+                    <input type="date" name="date" required>
+                    <input type="time" name="time" required>
+                    <input type="number" name="guests" placeholder="Personen" min="1" max="12" required>
+                </div>
+                <textarea name="message" placeholder="Haben Sie besondere Wünsche?" rows="4"></textarea>
+                <button type="submit" class="btn">Tisch reservieren</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Anna's Kulinarik | <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+</body>
+</html>
